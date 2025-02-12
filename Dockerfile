@@ -3,6 +3,9 @@
 # How to run:
 # docker run -d -p 6188:6188 pingora_lb
 
+# docker tag pingora_lb ${username}/pingora_lb:latest
+# docker push ${username}/pingora_lb:latest
+
 FROM rust:latest as builder
 
 WORKDIR /app
